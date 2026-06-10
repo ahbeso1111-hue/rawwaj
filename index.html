@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rawaaj - خدمات محتوى ذكي للشركات الصغيرة</title>
+    <!-- Font Awesome (CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- ملف الأنماط الخاص بنا -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <!-- الأنوار العائمة (تتحرك بخلفية حمراء) -->
+    <div class="floating-lights" id="floatingLights"></div>
+
+    <!-- ========== الهيدر ========== -->
+    <header class="header">
+        <a href="#home" class="logo" id="homeLogo">RAW<span>AAJ</span></a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="nav-menu" id="navMenu">
+            <a href="#home" class="nav-item active">الرئيسية</a>
+            <a href="#about" class="nav-item">من نحن</a>
+            <a href="#services" class="nav-item">خدماتنا</a>
+            <a href="#packages" class="nav-item">باقاتنا</a>
+            <a href="#how" class="nav-item">كيف نعمل</a>
+        </nav>
+        <a href="#" class="login-btn" id="openLogin"><i class="fas fa-sign-in-alt"></i> تسجيل الدخول</a>
+        <a href="#" class="account-btn" id="accountBtn" style="display: none;"><i class="fas fa-user"></i> حسابي</a>
+    </header>
+
+    <!-- ========== الشريط الجانبي للحساب ========== -->
+    <div class="account-sidebar" id="accountSidebar">
+        <button class="close-modal" id="closeSidebar" style="right: 20px; left: auto;">&times;</button>
+        <div class="account-sidebar-header">
+            <div class="account-sidebar-avatar" id="sidebarAvatar">م</div>
+            <div class="account-sidebar-info">
+                <h3 id="sidebarName">[اسم المستخدم]</h3>
+                <p id="sidebarEmail">[البريد الإلكتروني]</p>
+            </div>
+        </div>
+        <ul class="account-menu">
+            <li><a href="#" class="sidebar-link" data-page="dashboard"><i class="fas fa-home"></i> لوحة التحكم</a></li>
+            <li><a href="#" class="sidebar-link" data-page="projects"><i class="fas fa-briefcase"></i> مشاريعي</a></li>
+            <li><a href="#" class="sidebar-link" data-page="orders"><i class="fas fa-shopping-cart"></i> طلباتي</a></li>
+            <li><a href="#" class="sidebar-link" data-page="offers"><i class="fas fa-gift"></i> العروض الخاصة</a></li>
+            <li><a href="#" class="sidebar-link" data-page="settings"><i class="fas fa-cog"></i> الإعدادات</a></li>
+            <li><a href="#" class="sidebar-link logout" id="logoutBtnSidebar"><i class="fas fa-sign-out-alt"></i> تسجيل الخروج</a></li>
+        </ul>
+    </div>
+
+    <!-- ========== المحتوى الرئيسي (الصفحات) ========== -->
+    <main id="mainContent">
+        <!-- القسم الرئيسي -->
+        <section class="hero" id="home">
+            <h1 class="company-name">Rawaaj</h1>
+            <p class="hero-tagline">
+                <span class="highlight">متجر رقمي متكامل</span> ينتج محتوى تفاعلي (نصوص وتصاميم) باستخدام الذكاء الاصطناعي خصيصاً 
+                <span class="highlight">لأصحاب المشاريع الصغيرة والمتوسطة</span>
+            </p>
+            <div class="target-audience">
+                <div class="audience-item">مطاعم</div>
+                <div class="audience-item">صالونات</div>
+                <div class="audience-item">متاجر إلكترونية</div>
+                <div class="audience-item">شركات ناشئة</div>
+                <div class="audience-item">محلات تجارية</div>
+            </div>
+            <a href="#packages" class="login-btn" style="font-size: 1.2rem; padding: 15px 35px;">
+                <i class="fas fa-shopping-cart"></i> استعرض باقاتنا
+            </a>
+        </section>
+
+        <!-- قسم من نحن -->
+        <section class="section" id="about">
+            <h2 class="section-title">من نحن</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>مرحباً بكم في <strong style="color:#ff0000;">Rawaaj</strong>، متجرك الرقمي المتكامل لخدمات المحتوى الذكي.</p>
+                    <p>نحن نقدم حلولاً متكاملة لأصحاب المشاريع الصغيرة والمتوسطة الذين يحتاجون إلى محتوى احترافي يساعدهم على النمو والانتشار. نستخدم أحدث تقنيات الذكاء الاصطناعي لإنشاء مقالات مميزة وتصاميم جذابة لوسائل التواصل الاجتماعي.</p>
+                </div>
+                <div class="ai-features">
+                    <div class="ai-feature">
+                        <i class="fas fa-edit"></i>
+                        <h3>كتابة مقالات ذكية</h3>
+                        <p>مقالات مدروسة ومنسقة باستخدام الذكاء الاصطناعي لتعكس هوية مشروعك</p>
+                    </div>
+                    <div class="ai-feature">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>تصاميم سوشيال ميديا</h3>
+                        <p>تصاميم احترافية وجذابة لجميع منصات التواصل الاجتماعي</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم الخدمات الفردية -->
+        <section class="section" id="services">
+            <h2 class="section-title">خدماتنا الفردية</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 40px;">يمكنك طلب أي من هذه الخدمات بشكل منفرد حسب احتياجات مشروعك</p>
+            <div class="services-container" id="servicesContainer">
+                <!-- سيتم تعبئتها بواسطة JavaScript -->
+            </div>
+        </section>
+
+        <!-- قسم الباقات الشهرية -->
+        <section class="section" id="packages">
+            <h2 class="section-title">باقاتنا الشهرية</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 40px;">باقات متكاملة تشمل مجموعة من الخدمات بشكل دوري شهري</p>
+            <div class="packages-container" id="packagesContainer">
+                <!-- سيتم تعبئتها بواسطة JavaScript -->
+            </div>
+        </section>
+
+        <!-- قسم كيف نعمل -->
+        <section class="section" id="how">
+            <h2 class="section-title">كيف نعمل</h2>
+            <div class="how-it-works">
+                <div class="step"><div class="step-number">1</div><h3>التسجيل واختيار الباقة</h3><p>قم بالتسجيل في الموقع واختر الباقة المناسبة لمشروعك.</p></div>
+                <div class="step"><div class="step-number">2</div><h3>تعبئة نموذج المشروع</h3><p>نرسل لك نموذجاً مفصلاً لتفاصيل مشروعك.</p></div>
+                <div class="step"><div class="step-number">3</div><h3>إنتاج المحتوى بالذكاء الاصطناعي</h3><p>فريقنا يستخدم أحدث أدوات الذكاء الاصطناعي لإنشاء محتوى مخصص.</p></div>
+                <div class="step"><div class="step-number">4</div><h3>مراجعة وتعديل</h3><p>نرسل لك المحتوى للمراجعة، ونجري أي تعديلات تطلبها.</p></div>
+                <div class="step"><div class="step-number">5</div><h3>تسليم المحتوى النهائي</h3><p>نسلم لك المحتوى النهائي بصيغ مناسبة وجاهزة للنشر.</p></div>
+            </div>
+        </section>
+
+        <!-- التذييل -->
+        <footer class="footer">
+            <div class="footer-logo">Rawaaj</div>
+            <p class="footer-text">متجر رقمي متكامل ينتج محتوى تفاعلي باستخدام الذكاء الاصطناعي لأصحاب المشاريع الصغيرة والمتوسطة.</p>
+            <p class="copyright">© 2025 Rawaaj. جميع الحقوق محفوظة</p>
+        </footer>
+    </main>
+
+    <!-- صفحات الحساب (مخفية افتراضياً) -->
+    <div class="account-page" id="dashboardPage"><!-- المحتوى سيضاف لاحقاً بـ JS --></div>
+    <div class="account-page" id="projectsPage"><!-- المحتوى سيضاف لاحقاً --></div>
+    <div class="account-page" id="ordersPage"><!-- المحتوى سيضاف لاحقاً --></div>
+    <div class="account-page" id="offersPage"><!-- المحتوى سيضاف لاحقاً --></div>
+    <div class="account-page" id="settingsPage"><!-- المحتوى سيضاف لاحقاً --></div>
+
+    <!-- نماذج تسجيل الدخول والتسجيل -->
+    <div class="login-modal" id="loginModal"><!-- المحتوى سيضاف لاحقاً --></div>
+    <div class="login-modal" id="signupModal"><!-- المحتوى سيضاف لاحقاً --></div>
+
+    <!-- باقي النوافذ المنبثقة (الدفع، التفاصيل، التتبع) سيتم إضافتها بنفس الطريقة -->
+
+    <!-- روابط JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
